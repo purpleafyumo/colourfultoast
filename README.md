@@ -14,8 +14,8 @@
 
 - 兼容最低：API 21 Android 5.0
 - 使用版本：API 29 Android 10
-- 版本代码：2
-- 版本名称：1.0.1
+- 版本代码：3
+- 版本名称：1.0.2
 - 使用语言：Kotlin 100%
 
 
@@ -39,7 +39,7 @@ allprojects {
 
 ```groovy
 dependencies {
-	implementation 'com.github.purpleafx:colourfultoast:1.0.1'
+	implementation 'com.github.purpleafx:colourfultoast:1.0.2'
 }
 ```
 

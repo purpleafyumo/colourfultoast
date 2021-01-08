@@ -11,8 +11,8 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 3
+        versionName "1.0.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -34,31 +34,15 @@ android {
         jvmTarget = '1.8'
     }
 
-    // 以下为配置library注释在打包jar后保留
-    // 打包源码jar
-    task sourcesJar(type: Jar) {
-        from android.sourceSets.main.java.srcDirs
-        classifier = 'sources'
+    project.task('androidSourcesJar', type: Jar) {
+        archiveClassifier = 'sources'
+        from project.android.sourceSets.main.java.srcDirs
     }
 
-    task javadoc(type: Javadoc) {
-        failOnError false
-        source = android.sourceSets.main.java.sourceFiles
-        classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-        classpath += configurations.compile
-    }
-
-    // 打包文档jar
-    task javadocJar(type: Jar, dependsOn: javadoc) {
-        classifier = 'javadoc'
-        from javadoc.destinationDir
-    }
-
-    artifacts {
-        archives sourcesJar
-        archives javadocJar
+    project.artifacts {
+        archives project.tasks.androidSourcesJar
+        //archives androidJavadocsJar 因为代码中的注释不规范
     }
 }
 
-dependencies {
-}
+dependencies {}
