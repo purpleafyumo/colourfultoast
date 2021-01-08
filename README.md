@@ -118,6 +118,6 @@ ColourfulToast.text("多彩土司 · 系统风格")// 设置文本，缺省："�
 
 # 最后说明
 
-> `AIDE` 有可能是用不了该库，请换用 `Android Studio` 
+> `AIDE` 有可能使用不了该库，请换用 `Android Studio` 
 
 谢谢大家的支持！发现BUG请即时告知我们哦~
