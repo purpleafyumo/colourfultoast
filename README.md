@@ -14,8 +14,8 @@
 
 - 兼容最低：API 21 Android 5.0
 - 使用版本：API 29 Android 10
-- 版本代码：1
-- 版本名称：1.0.0
+- 版本代码：2
+- 版本名称：1.0.1
 - 使用语言：Kotlin 100%
 
 
@@ -39,7 +39,7 @@ allprojects {
 
 ```groovy
 dependencies {
-	implementation 'com.github.purpleafx:colourfultoast:1.0.0'
+	implementation 'com.github.purpleafx:colourfultoast:1.0.1'
 }
 ```
 
@@ -117,5 +117,7 @@ ColourfulToast.text("多彩土司 · 系统风格")// 设置文本，缺省："�
 
 
 # 最后说明
+
+> `AIDE` 有可能是用不了该库，请换用 `Android Studio` 
 
 谢谢大家的支持！发现BUG请即时告知我们哦~
