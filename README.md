@@ -2,50 +2,29 @@
 
 > 多彩土司 · 打造不一样的提示！
 
-- 库开发者：紫叶工作室
-- 开源协议：MIT License
-- 联系方式：QQ-3287319782
-- 加入我们：Email-3287319782@qq.com
-- 库负责人：@凉笙初雨
-
-
-
-# 库类信息
-
-- 兼容最低：API 21 Android 5.0
-- 使用版本：API 29 Android 10
-- 版本代码：3
-- 版本名称：1.0.2
-- 使用语言：Kotlin 100%
-
-
-
-# 导入依赖
+## 导入依赖
 
 > 打开项目根目录内的 `build.gradle` 
 
 ```groovy
 allprojects {
 	repositories {
-		...
-		maven { url 'https://jitpack.io' }
+		// ...
+		maven { url "https://www.jitpack.io" }
 	}
 }
 ```
-
-
 
 > 打开app目录内的 `build.gradle` 
 
 ```groovy
 dependencies {
-	implementation 'com.github.purpleafx:colourfultoast:1.0.2'
+	// ...
+    implementation "com.github.purpleafx:colourfultoast:1.0.3"
 }
 ```
 
-
-
-# 如何使用
+## 如何使用
 
 > Java
 
@@ -70,8 +49,6 @@ ColourfulToast.text("多彩土司 · 系统风格")// 设置文本，缺省："�
             .show();// 显示
 ```
 
-
-
 > Kotlin
 
 ```kotlin
@@ -94,9 +71,7 @@ ColourfulToast.text("多彩土司 · 系统风格")// 设置文本，缺省："�
             .show()// 显示
 ```
 
-
-
-# 常量表格
+## 常量表格
 
 > 请遵循本库的定义，用本库自带的常量！
 
@@ -114,10 +89,29 @@ ColourfulToast.text("多彩土司 · 系统风格")// 设置文本，缺省："�
 | Style    | WARNING      | 风格-警告        |
 | Style    | NORMAL       | 风格-正常        |
 
-
-
-# 最后说明
+## 依赖声明
 
 > `AIDE` 有可能使用不了该库，请换用 `Android Studio` 
 
 谢谢大家的支持！发现BUG请即时告知我们哦~
+
+## 历史版本
+
+> **v1.0.0**
+
+- 首次提交
+
+> **v1.0.1**
+
+- 修改细节
+
+> **v1.0.2**
+
+- 也是修改细节
+
+> **v1.0.3**
+
+- 升级目标SDK版本->API33
+- 修改部分XML资源
+- 修复已知问题
+- 优化用户体验

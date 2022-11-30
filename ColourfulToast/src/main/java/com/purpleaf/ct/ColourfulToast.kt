@@ -1,5 +1,6 @@
 package com.purpleaf.ct
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.widget.TextView
@@ -8,6 +9,7 @@ import android.widget.Toast
 /**
  * 多彩土司 · 打造不一样的提示！
  */
+@SuppressLint("StaticFieldLeak")
 object ColourfulToast {
     private var context: Context? = null// 上下文
 
